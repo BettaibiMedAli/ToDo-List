@@ -7,8 +7,8 @@ export default function NewTodoForm({onSubmit}){
     function hundleSubmit(e)
     {
         e.preventDefault();
-        if(newItem === "") return
-
+        if(newItem === "") return;
+        
         onSubmit(newItem);
 
         setNewItem("");
